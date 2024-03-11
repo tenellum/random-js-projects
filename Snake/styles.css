@@ -1,0 +1,6 @@
+html, body, head { height: 100%; margin: 0; }
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+}
