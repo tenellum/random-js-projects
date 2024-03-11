@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tetris</title>
+		<meta name="keywords" content="Tetris, Game">
+		<meta name="description" content="JavaScript Tetris Game">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			a {
+				color: black;
+				text-decoration : none;
+				font-size : 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id='gameCanvas' style='border: 2px solid black;'></canvas>
+		<a href='index.html' style='position: absolute; right: 50px'>&#8635<a>
+		<p id='scoreText' style='font-family: Comic Sans MS; font-size: 25px;text-align:center'>Press Any to Start</p>
+		<!--<p id='nextBlockText' style='position: absolute; top: 0'>Press Any to Start</p>-->
+		<canvas id='nextBlockCanvas' height='162' width='162' style='border: 2px solid black;'></canvas>
+		
+		<script src='script.js'></script>
+	</body>
+</html>
