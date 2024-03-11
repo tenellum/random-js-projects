@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Whitejohn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="">
+		<meta name="keywords" content="Snake, Game">
+		<meta name="description" content="JavaScript Snake Game">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet" />
+	</head>
+	<body>
+        <h1 id="gameResultGraph">&nbsp;</h1>
+        <hr>
+        <div>
+            <input type="number" name="betInput" id="betInput">
+            <button id="betButton" onclick="inputHandler(play1, 'bet', 'handDiv');" type="button">Bet</button>
+            <p>Name: <span id="nameSpan"></span></p>
+            <p>Chips: <span id="chipSpan"></span></p>
+            <p>Bet: <span id="betSpan"></span></p>
+        </div>
+        <hr>
+        <h1>Player Hand</h1>
+        <button class="playButton" onclick="inputHandler(play1, 'hit', 'handDiv');" type="button" disabled>Hit</button>
+        <button class="playButton" onclick="inputHandler(play1, 'stand', 'handDiv');" type="button" disabled>Stand</button>
+        <button class="playButton" id="doubleButton" onclick="inputHandler(play1, 'double', 'handDiv');" type="button" disabled>Double</button>
+        <p>Hand Value: <span id="valueSpan"></span></p>
+        <div id="handDiv" style="display: flex;"></div>
+        <hr>
+        <h1>Dealer Hand</h1>
+        <p>Hand Value: <span id="dealerValueSpan">0</span></p>
+        <div id="dealerHandDiv"></div>
+        <!--<button onclick="" type="button">Split</button>
+        <button onclick="" type="button">Add Dealer Card</button>
+        <button onclick="" type="button">Remove Dealer Card</button>
+        <div id="dealerHand"></div>
+        <br>
+        <button onclick="" type="button">Add Player Card</button>
+        <button onclick="" type="button">Remove Player Card</button>
+        <div id="playerHand"></div>-->
+		
+		<script src='script.js'></script>
+	</body>
+</html>
